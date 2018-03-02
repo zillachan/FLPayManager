@@ -32,7 +32,6 @@
   > **微信发起支付**
 
   ```
-  
 /*! @brief 发送请求到微信，等待微信返回onResp
  *
  * 函数调用后，会切换到微信的界面。第三方应用程序等待微信返回onResp。微信在异步处理完成后一定会调用onResp。支持以下类型
@@ -194,6 +193,7 @@
 
 > **2、在`didFinishLaunchingWithOptions`中注册 app，内部绑定根据Info中对应的Url Types 绑定 `URL Scheme`**
 
+
 ```
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -208,6 +208,7 @@
 > 3、**发起支付**
 
 -  支付宝支付
+
 
 ```
 
@@ -280,3 +281,5 @@ NSString *orderMessage = @"Demo 中 有 可测试的 订单信息";
 - 2、封装的思路以及分析都已经详细说明了，如果大家有什么疑惑或者新的想法都可以留言给我,我都会一一回复！
 
 - 3、**欢迎大家去[简书](http://www.jianshu.com/users/fe5700cfb223/latest_articles)关注我，喜欢就给个like，打赏也会厚脸无耻地收下，我会随时更新原创干货~**
+
+
